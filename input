@@ -1,0 +1,11 @@
+#splits each line of HTML and puts into a list
+# AKA a website scanne
+#maybe make it read a file and minify the html
+def htmlSplitter(text):
+    splitTxt = text.split(">")
+    for x in splitTxt:
+        x += ">" #just appends the > back to the end
+        print(x) #prints out the list
+
+text = input()
+htmlSplitter(text)
